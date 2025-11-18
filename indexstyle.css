@@ -3,44 +3,61 @@ body, html, header {
   padding:0;
 }
 
-
 .topoheader {
-	background-color: red;
+	background-color: #230C33;
 	margin:0;
 	display: flex;
 	width:100%;
 }
 
 .titulo {
-	background-color: yellow;
 	margin: 15px;
-	width:75%;
+	width:70%;
+	padding-left: 50px;
+}
+
+.titulo a {
+	font-size: 40px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #EBE0FF;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #EBE0FF;
 }
 
 .menu {
-	width:25%;
+	width:30%;
 	padding:5px;
 	margin:0;
-	background-color: blue;
 	display: flex;
 }
 
 .menu a {
-	background-color: white;
+	margin: 5px;
+	font-size: 18px;
+	text-decoration: none;
 	width: 50%;
 	text-align: center;
 	align-content: center;
 	justify-content:center;
 }
 
-
 .DemoReel {
-	background-color: orange;
+	background-color: #D7C8F3;
 	display: flex;
 	flex-flow: column;
 	text-align: center;
-	height:100%;
-	
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: #230C33;
+}
+
+.DemoReel h1 {
+	color:#592E83;
+	font-size: 70px;
 }
 
 .videoframe{
@@ -50,22 +67,41 @@ body, html, header {
 	width: 75%;
 }
 
-
 footer {
-	background-color: purple;
+	background-color: #230C33;
 	display: flex;
 	width:100%;
 }
 
 .footername{
 	width:50%;
+	align-content: center;
+	text-align: center;
+	color: #E1D8F7;
 }
 
 .contact{
 	width:50%;
+	padding: 20px;
+	color: #E1D8F7;
 }
-socialmedia i{
-	font-size: 30px;
-  background: #3B5998;
-  border-radius:50%;
+
+.email p{
+	font-size: 20px;
+}
+
+.socialmedia {
+	width:100%;
+}
+
+.socialmedia i{
+	margin:5px;
+	font-size: 20px;
+	background: #D7C8F3;
+	color: #592E83;
+	border-radius:50%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
