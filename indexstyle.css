@@ -1,11 +1,10 @@
-body {
-  background-color: powderblue;
+body, html, header {
   margin: 0;
-  width:100%;
-  height:100%;
+  padding:0;
 }
 
-.header {
+
+.topoheader {
 	background-color: red;
 	margin:0;
 	display: flex;
@@ -19,37 +18,54 @@ body {
 }
 
 .menu {
-	background-color: green;
 	width:25%;
-}
-
-.menu ul {
+	padding:5px;
 	margin:0;
-	padding:0;
 	background-color: blue;
-	text-align: center;
-	align-content: center;
-	justify-content:center;
 	display: flex;
 }
 
-.menu li{
-	margin:0;
-	padding: 5px;
+.menu a {
+	background-color: white;
 	width: 50%;
-	background-color: gray;
 	text-align: center;
-	text-decoration: none;
-	list-style-type: none;
+	align-content: center;
+	justify-content:center;
 }
+
 
 .DemoReel {
-	margin:0;
 	background-color: orange;
+	display: flex;
+	flex-flow: column;
 	text-align: center;
+	height:100%;
+	
+}
+
+.videoframe{
+	background-color: gray;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
 }
 
 
-.footer {
+footer {
 	background-color: purple;
+	display: flex;
+	width:100%;
+}
+
+.footername{
+	width:50%;
+}
+
+.contact{
+	width:50%;
+}
+socialmedia i{
+	font-size: 30px;
+  background: #3B5998;
+  border-radius:50%;
 }
