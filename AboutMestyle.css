@@ -101,7 +101,6 @@ a:visited {
 }
 
 .introtext p{
-	text-indent: 50px;
 	animation-name: Appear;
 	animation-duration:2s;
 	animation-delay: 0.5s;
@@ -130,7 +129,6 @@ a:visited {
 .resume h1{
 	font-family: 'Annie Use Your Telescope';
 	letter-spacing: 3px;
-	text-align: center;
 	color: #592E83;
 }
 
@@ -225,3 +223,6 @@ footer {
 	background: #CAA8F5;
 	color: #FFFFFF ;
 }
+
+
+

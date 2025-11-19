@@ -173,3 +173,37 @@ footer {
 	background: #CAA8F5;
 	color: #FFFFFF ;
 }
+
+
+
+@media screen and (min-width: 601px) and (max-width: 992px){
+	
+.topoheader {
+	background-color: red;
+}	
+	
+.titulo {
+	font-family: 'Annie Use Your Telescope';
+	margin: 15px;
+	width:60%;
+	padding-left: 30px;
+}
+
+.titulo a {
+	font-size: 40px;
+	text-decoration: none;
+	letter-spacing: 5px;
+	color: #EBE0FF;
+	transition: 0.5s;
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-fill-mode: both;
+}
+	
+}
+
+@media screen and (max-width: 600px){
+.topoheader {
+	background-color: orange;
+}	
+}
