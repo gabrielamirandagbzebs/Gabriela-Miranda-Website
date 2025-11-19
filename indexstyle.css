@@ -3,6 +3,11 @@ body, html, header {
   padding:0;
 }
 
+@keyframes Appear{
+	from{opacity:0;}
+	to{opacity:100;}
+}
+
 .topoheader {
 	background-color: #230C33;
 	margin:0;
@@ -11,6 +16,7 @@ body, html, header {
 }
 
 .titulo {
+	font-family: 'Annie Use Your Telescope';
 	margin: 15px;
 	width:70%;
 	padding-left: 50px;
@@ -19,8 +25,17 @@ body, html, header {
 .titulo a {
 	font-size: 40px;
 	text-decoration: none;
-	letter-spacing: 2px;
+	letter-spacing: 5px;
 	color: #EBE0FF;
+	transition: 0.5s;
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-fill-mode: both;
+}
+
+.titulo a:hover{
+	letter-spacing: 7px;
+	padding-left:10px;
 }
 
 a:visited {
@@ -36,6 +51,7 @@ a:visited {
 }
 
 .menu a {
+	font-family: 'Athiti';
 	margin: 5px;
 	font-size: 18px;
 	text-decoration: none;
@@ -43,10 +59,20 @@ a:visited {
 	text-align: center;
 	align-content: center;
 	justify-content:center;
+	letter-spacing:2px;
+	transition: 0.5s;
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+}
+
+.menu a:hover{
+	letter-spacing: 5px;
 }
 
 .DemoReel {
-	background-color: #D7C8F3;
+	background-color: #EBE0FF;
 	display: flex;
 	flex-flow: column;
 	text-align: center;
@@ -56,8 +82,15 @@ a:visited {
 }
 
 .DemoReel h1 {
+	font-family: 'Annie Use Your Telescope';
 	color:#592E83;
 	font-size: 70px;
+	letter-spacing: 5px;
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay:0.4s;
+	animation-fill-mode: both;
+	
 }
 
 .videoframe{
@@ -65,6 +98,10 @@ a:visited {
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay:0.5s;
+	animation-fill-mode: both;
 }
 
 footer {
@@ -74,19 +111,44 @@ footer {
 }
 
 .footername{
+	font-family: 'Annie Use Your Telescope';
+	font-size: 50px;
+	letter-spacing:5px;
 	width:50%;
 	align-content: center;
 	text-align: center;
 	color: #E1D8F7;
 }
 
+.footername a{
+	color: #E1D8F7;
+	text-decoration: none;
+	transition: 0.3s;
+	
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-fill-mode: both;
+}
+
+.footername a:hover{
+	letter-spacing:7px;
+}
+
 .contact{
+	font-family: 'Athiti';
 	width:50%;
 	padding: 20px;
 	color: #E1D8F7;
+	letter-spacing: 2px;
+	
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
 }
 
 .email p{
+	letter-spacing: 1px;
 	font-size: 20px;
 }
 
@@ -104,4 +166,10 @@ footer {
 	padding-right: 10px;
 	padding-top: 12px;
 	padding-bottom: 12px;
+	transition: 0.3s;
+}
+
+.socialmedia i:hover{
+	background: #CAA8F5;
+	color: #FFFFFF ;
 }
