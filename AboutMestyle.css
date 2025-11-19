@@ -226,3 +226,240 @@ footer {
 
 
 
+@media screen and (min-width: 601px) and (max-width: 992px){
+
+* { margin: 0; padding: 0; }
+	
+.topoheader {
+	background-color: #230C33;
+	margin:0;
+	display: block;
+	text-align: center;
+	align-content: center;
+	justify-content:center;
+}
+
+.titulo {
+	width:100%;
+	margin:0;
+	font-family: 'Annie Use Your Telescope';
+	padding-left: 0px;
+	text-align: center;
+	align-content: center;
+	justify-content:center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.titulo a {
+	font-size: 40px;
+	text-decoration: none;
+	letter-spacing: 5px;
+	color: #EBE0FF;
+	transition: 0.5s;
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-fill-mode: both;
+}
+
+.titulo a:hover{
+	letter-spacing: 7px;
+	padding-left:0px;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #EBE0FF;
+}
+
+.menu {
+	margin:0;
+	padding: 0;
+	display: flex;
+	width:100%;
+}
+
+.menu a {
+	margin:10px;
+	width:50%;
+	color: #EBE0FF;
+	font-family: 'Athiti';
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	align-content: center;
+	justify-content:center;
+	letter-spacing:2px;
+	transition: 0.5s;
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+}
+
+.menu a:hover{
+	letter-spacing: 5px;
+}
+
+.intro {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	padding-top: 100px;
+}
+
+.profilepic {
+	width:30%;
+	justify-content: center;
+	align-content: center;
+}
+
+.profilepic img{
+	width:100%;
+	border-radius: 50%;
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay: 0.3s;
+	animation-fill-mode: both;
+}
+
+.introtext{
+	font-family: 'Athiti';
+	width: 70%;
+	padding: 30px;
+	font-size: 20px;
+}
+
+.introtext p{
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+}
+
+.introtext h1{
+	font-family: 'Annie Use Your Telescope';
+	letter-spacing: 3px;
+	color: #592E83;
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay: 0.4s;
+	animation-fill-mode: both;
+}
+
+.resume{
+	font-family: 'Athiti';
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	padding-bottom: 100px;
+}
+
+.resume h1{
+	font-family: 'Annie Use Your Telescope';
+	letter-spacing: 3px;
+	color: #592E83;
+}
+
+.workexp {
+	width: 50%;
+	padding: 30px;
+	
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay: 0.6s;
+	animation-fill-mode: both;
+}
+
+.educationlang {
+	width: 50%;
+	padding: 30px;
+	
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay: 0.8s;
+	animation-fill-mode: both;
+}
+
+
+footer {
+	background-color: #230C33;
+	display: block;
+	align-content: center;
+	text-align: center;
+}
+
+.footername{
+	width:100%;
+	padding-top: 30px;
+	font-family: 'Annie Use Your Telescope';
+	font-size: 40px;
+	letter-spacing:5px;
+
+	align-content: center;
+	text-align: center;
+	color: #E1D8F7;
+}
+
+.footername a{
+	color: #E1D8F7;
+	text-decoration: none;
+	transition: 0.3s;
+	
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-fill-mode: both;
+}
+
+.footername a:hover{
+	letter-spacing:7px;
+}
+
+.contact{
+	width:100%;
+	padding:0;
+	padding-top: 30px;
+	font-family: 'Athiti';
+
+	color: #E1D8F7;
+	letter-spacing: 2px;
+	align-content: center;
+	text-align: center;
+	
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+}
+
+.email p{
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+
+.socialmedia {
+	width:100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.socialmedia i{
+	margin:5px;
+	font-size: 20px;
+	background: #D7C8F3;
+	color: #592E83;
+	border-radius:50%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	transition: 0.3s;
+}
+
+.socialmedia i:hover{
+	background: #CAA8F5;
+	color: #FFFFFF ;
+}
+}
