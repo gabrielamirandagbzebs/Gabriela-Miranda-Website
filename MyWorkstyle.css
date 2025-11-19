@@ -74,7 +74,7 @@ a:visited {
 	text-align: center;
 	display: flex;	
 	flex-flow: column nowrap;
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 100px;
 }
 
@@ -105,33 +105,26 @@ a:visited {
 	padding:10px;
 }
 
-.gifgallery1{
+.gifgallery{
 	display: flex;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	justify-content: center;
 	padding-top: 50px;
 	
 	animation-name: Appear;
 	animation-duration:2s;
 	animation-delay:0.6s;
 	animation-fill-mode: both;
+	
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	
+	align-content: center;
+	justify-content: center;
+	text-align: center;
 }
 
-.gifgallery2{
-	display: flex;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: center;
-	padding-bottom: 50px;
-	
-	animation-name: Appear;
-	animation-duration:2s;
-	animation-delay:0.7s;
-	animation-fill-mode: both;
-}
 
 .imageblock {
 	padding: 10px;
@@ -324,7 +317,7 @@ a:visited {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
-	display: flex;
+	display: block;
 	animation-name: Appear;
 	animation-duration:2s;
 	animation-delay:0.5s;
@@ -332,44 +325,38 @@ a:visited {
 }
 
 .vimeoframe{
-	width:33.3%;
+	width:100%;
 	padding:5px;
 }
 
-.gifgallery1{
+.gifgallery{
 	display: flex;
-	width: 90%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	justify-content: center;
 	padding-top: 50px;
 	
 	animation-name: Appear;
 	animation-duration:2s;
 	animation-delay:0.6s;
 	animation-fill-mode: both;
-}
-
-.gifgallery2{
-	display: flex;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: center;
-	padding-bottom: 50px;
 	
-	animation-name: Appear;
-	animation-duration:2s;
-	animation-delay:0.7s;
-	animation-fill-mode: both;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
 }
 
 .imageblock {
 	padding: 10px;
 	display: flex;
 	flex-flow: row nowrap;
-	width: 50%;
+	width: 45%;
 	transition:0.2s;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
 }
 
 .imageblock img{
@@ -378,7 +365,7 @@ a:visited {
 
 .imageblock:hover{
 	opacity: 0.3;
-	width:31%;
+	width:46%;
 }
 
 footer {
