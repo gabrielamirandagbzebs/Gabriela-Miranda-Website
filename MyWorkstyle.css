@@ -299,37 +299,86 @@ a:visited {
 	letter-spacing: 5px;
 }
 
-.DemoReel {
+.WorkReels {
 	background-color: #EBE0FF;
-	display: block;
 	text-align: center;
+	display: flex;	
+	flex-flow: column nowrap;
 	padding-top: 50px;
 	padding-bottom: 100px;
-	color: #230C33;
 }
 
-.DemoReel h1 {
-	padding-bottom: 30px;
+.WorkReels h1{
 	font-family: 'Annie Use Your Telescope';
 	color:#592E83;
-	font-size: 50px;
+	font-size: 70px;
 	letter-spacing: 5px;
 	animation-name: Appear;
 	animation-duration:2s;
 	animation-delay:0.4s;
 	animation-fill-mode: both;
-	
+	padding-bottom:50px;
 }
 
-.videoframe{
-	background-color: gray;
+.vimeoreels{
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	width: 90%;
+	display: flex;
 	animation-name: Appear;
 	animation-duration:2s;
 	animation-delay:0.5s;
 	animation-fill-mode: both;
+}
+
+.vimeoframe{
+	width:33.3%;
+	padding:5px;
+}
+
+.gifgallery1{
+	display: flex;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	padding-top: 50px;
+	
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay:0.6s;
+	animation-fill-mode: both;
+}
+
+.gifgallery2{
+	display: flex;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	padding-bottom: 50px;
+	
+	animation-name: Appear;
+	animation-duration:2s;
+	animation-delay:0.7s;
+	animation-fill-mode: both;
+}
+
+.imageblock {
+	padding: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 50%;
+	transition:0.2s;
+}
+
+.imageblock img{
+	width:100%;
+}
+
+.imageblock:hover{
+	opacity: 0.3;
+	width:31%;
 }
 
 footer {
