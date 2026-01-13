@@ -1,11 +1,11 @@
 <!DOCTYPE html lang="en">
-<html>
+<html id="myDiv">
 <head>
 <meta charset='UTF-8'/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script src="https://kit.fontawesome.com/0a2b408aa2.js" crossorigin="anonymous"></script>
-<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
 
 <title>Gabriela Miranda</title>
@@ -61,27 +61,27 @@
 	<div class="gifgallery">
 
 	<div class="imageblock">
-	<a href="https://www.linkedin.com/posts/gabriela-miranda-gbzebs_im-late-for-halloween-i-know-here-is-activity-7391904010691219457-iw3a?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENuIfkBVRpIGgOGP8EeOrKHvTAQ45jiJ1Y" target="_blank"><img src="site files/gifs/Witch.gif"></a>
+	<img onclick="openModal('modal1')" src="site files/gifs/Witch.gif">
 	</div>
 
 	<div class="imageblock">
-	<a href="https://www.linkedin.com/posts/gabriela-miranda-gbzebs_here-is-my-september-pose-challenge-organized-activity-7378819341271580672-whwx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENuIfkBVRpIGgOGP8EeOrKHvTAQ45jiJ1Y" target="_blank"><img src="site files/gifs/Pose Challenge Namaari.gif"></a>
+	<img onclick="openModal('modal2')" src="site files/gifs/Pose Challenge Namaari.gif">
 	</div>
 
 	<div class="imageblock">
-	<a href="https://www.linkedin.com/posts/gabriela-miranda-gbzebs_i-also-participated-in-julie-roulet-worldwide-activity-7379170272618209280-T_QC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENuIfkBVRpIGgOGP8EeOrKHvTAQ45jiJ1Y" target="_blank"><img src="site files/gifs/Run Cycle Namaari.gif"></a>
+	<img onclick="openModal('modal3')" src="site files/gifs/Run Cycle Namaari.gif">
 	</div>
 	
 	<div class="imageblock">
-	<a href="https://www.instagram.com/reel/DEIjkt0v14r/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="site files/gifs/Totally Wicked.gif"></a>
+	<img onclick="openModal('modal4')" src="site files/gifs/Totally Wicked.gif">
 	</div>
 
 	<div class="imageblock">
-	<a href="https://www.instagram.com/reel/DEF17Duv3_n/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="site files/gifs/Wheatley.gif"></a>
+	<img onclick="openModal('modal5')" src="site files/gifs/Wheatley.gif">
 	</div>
 
 	<div class="imageblock">
-	<a href="https://www.instagram.com/reel/CpAXlRHj2KG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="site files/gifs/Walk Cycle Luz.gif"></a>
+	<img onclick="openModal('modal6')" src="site files/gifs/Walk Cycle Luz.gif">
 	</div>
 	
 	
@@ -91,20 +91,15 @@
 </div>
 
 
-
-
-
-
-
-<footer>
-<div class="footername">
+<footer >
+<div class="footername" >
 <a href="#topo">Gabriela Miranda</a>
 </div>
 
 <div class="contact">
 <div class="email">
-<h3>Contact:</h3>
-<p>gabrielamirandagbzebs@gmail.com</p>
+<h3 >Contact:</h3>
+<p >gabrielamirandagbzebs@gmail.com</p>
 </div>
 
 <div class="socialmedia">
@@ -117,7 +112,72 @@
 </div>
 </footer>
 
+<!--MODAL-->
+<div id="modal1" class="modal">
+  <div class="close" onclick = "closeModal('modal1')">
+  <div class="modal-content">
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1153801990?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Witch_Fire_MP4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+  </div>
+</div>
 
+<div id="modal2" class="modal">
+  <div class="close" onclick = "closeModal('modal2')">
+  <div class="modal-content">
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1153802444?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SeptemberChallenge_FINAL"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="close" onclick = "closeModal('modal3')">
+  <div class="modal-content">
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1153802676?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="LoopFinal2"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="close" onclick = "closeModal('modal4')">
+  <div class="modal-content">
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1153810002?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TotallyWicked_FINAL"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+  </div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="close" onclick = "closeModal('modal5')">
+  <div class="modal-content">
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1153803787?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Wheatley_FINAL-mp"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+  </div>
+</div>
+
+<div id="modal6" class="modal">
+  <div class="close" onclick = "closeModal('modal6')">
+  <div class="modal-content">
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1153811015?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="A13_FINAL_GabrielaMiranda"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+  </div>
+</div>
+
+<!--MODAL-->
+
+<script>
+function openModal(modalId){
+	let modal = document.getElementById(modalId);
+  modal.style.display = "block";
+  document.getElementById("myDiv").style.overflow = "hidden";
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+function closeModal(modalId){ 
+	let modal = document.getElementById(modalId);
+  modal.style.display = "none";
+  document.getElementById("myDiv").style.overflow = "auto";
+}
+</script>
 </body>
 
 </html>

@@ -2,30 +2,40 @@ body, html, header {
   margin: 0;
   padding:0;
 }
+
+html{
+	overflow: auto;
+}
+
+body{
+	background-image:url('site files/text.jpg');
+}
+
 @keyframes Appear{
 	from{opacity:0;}
 	to{opacity:100;}
 }
 
 .topoheader {
-	background-color: #230C33;
 	margin:0;
 	display: flex;
 	width:100%;
+	background-color: #dad7cd;
+	box-shadow: 0px 0px 10px 3px #000000;
 }
 
 .titulo {
-	font-family: 'Annie Use Your Telescope';
+	font-family: 'Rock Salt';
 	margin: 15px;
 	width:70%;
 	padding-left: 50px;
 }
 
 .titulo a {
-	font-size: 40px;
+	font-size: 25px;
 	text-decoration: none;
 	letter-spacing: 5px;
-	color: #EBE0FF;
+	color: #344e41;
 	transition: 0.5s;
 	animation-name: Appear;
 	animation-duration:2s;
@@ -39,7 +49,7 @@ body, html, header {
 
 a:visited {
 	text-decoration: none;
-	color: #EBE0FF;
+	color: #344e41;
 }
 
 .menu {
@@ -50,6 +60,7 @@ a:visited {
 }
 
 .menu a {
+	color: #344e41;
 	font-family: 'Athiti';
 	margin: 5px;
 	font-size: 18px;
@@ -69,8 +80,9 @@ a:visited {
 .menu a:hover{
 	letter-spacing: 5px;
 }
+
 .WorkReels {
-	background-color: #EBE0FF;
+	background-color: rgb(218, 215, 205, 0.6);
 	text-align: center;
 	display: flex;	
 	flex-flow: column nowrap;
@@ -79,9 +91,9 @@ a:visited {
 }
 
 .WorkReels h1{
-	font-family: 'Annie Use Your Telescope';
-	color:#592E83;
-	font-size: 70px;
+	font-family: 'Rock Salt';
+	color:#3a5a40;
+	font-size: 20px;
 	letter-spacing: 5px;
 	animation-name: Appear;
 	animation-duration:2s;
@@ -143,26 +155,78 @@ a:visited {
 	width:31%;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.close{
+	display:block;
+	align-content: center;
+	justify-content: center;
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+}
+
+.close:hover{
+	cursor: pointer;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 60%;
+}
+
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0.5)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0.5)} 
+  to {transform:scale(1)}
+}
+
 
 footer {
-	background-color: #230C33;
+	background-color: #a3b18a;
 	display: flex;
 	width:100%;
+	box-shadow: 0px 0px 10px 3px grey;
 }
 
 .footername{
-	font-family: 'Annie Use Your Telescope';
-	font-size: 50px;
+	font-family: 'Rock Salt';
+	font-size: 30px;
 	letter-spacing:5px;
 	width:50%;
 	align-content: center;
 	text-align: center;
-	color: #E1D8F7;
-	
+	color: #344e41;
 }
 
 .footername a{
-	color: #E1D8F7;
+	color: #344e41;
 	text-decoration: none;
 	transition: 0.3s;
 	
@@ -179,7 +243,7 @@ footer {
 	font-family: 'Athiti';
 	width:50%;
 	padding: 20px;
-	color: #E1D8F7;
+	color: #344e41;
 	letter-spacing: 2px;
 	
 	animation-name: Appear;
@@ -200,8 +264,8 @@ footer {
 .socialmedia i{
 	margin:5px;
 	font-size: 20px;
-	background: #D7C8F3;
-	color: #592E83;
+	background: #3a5a40;
+	color: #a3b18a;
 	border-radius:50%;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -211,29 +275,34 @@ footer {
 }
 
 .socialmedia i:hover{
-	background: #CAA8F5;
-	color: #FFFFFF ;
+	background: #dad7cd;
+	color: #344e41 ;
 }
 
 
 
-@media screen and (min-width: 701px) and (max-width: 992px){
+@media screen and (min-width: 701px) and (max-width: 1350px){
 
 * { margin: 0; padding: 0; }
+
+.modal-content{
+	width:100%;
+}
 	
 .topoheader {
-	background-color: #230C33;
+	background-color: #dad7cd;
 	margin:0;
 	display: block;
 	text-align: center;
 	align-content: center;
 	justify-content:center;
+	box-shadow: 0px 0px 10px 3px #000000;
 }
 
 .titulo {
 	width:100%;
 	margin:0;
-	font-family: 'Annie Use Your Telescope';
+	font-family: 'Rock Salt';
 	padding-left: 0px;
 	text-align: center;
 	align-content: center;
@@ -243,10 +312,10 @@ footer {
 }
 
 .titulo a {
-	font-size: 40px;
+	font-size: 30px;
 	text-decoration: none;
 	letter-spacing: 5px;
-	color: #EBE0FF;
+	color: #344e41;
 	transition: 0.5s;
 	animation-name: Appear;
 	animation-duration:2s;
@@ -260,7 +329,7 @@ footer {
 
 a:visited {
 	text-decoration: none;
-	color: #EBE0FF;
+	color: #344e41;
 }
 
 .menu {
@@ -273,7 +342,7 @@ a:visited {
 .menu a {
 	margin:10px;
 	width:50%;
-	color: #EBE0FF;
+	color: #344e41;
 	font-family: 'Athiti';
 	font-size: 18px;
 	text-decoration: none;
@@ -293,7 +362,7 @@ a:visited {
 }
 
 .WorkReels {
-	background-color: #EBE0FF;
+	background-color: rgb(218, 215, 205, 0.6);
 	text-align: center;
 	display: flex;	
 	flex-flow: column nowrap;
@@ -302,9 +371,9 @@ a:visited {
 }
 
 .WorkReels h1{
-	font-family: 'Annie Use Your Telescope';
-	color:#592E83;
-	font-size: 70px;
+	font-family: 'Rock Salt';
+	color:#3a5a40;
+	font-size: 20px;
 	letter-spacing: 5px;
 	animation-name: Appear;
 	animation-duration:2s;
@@ -369,7 +438,7 @@ a:visited {
 }
 
 footer {
-	background-color: #230C33;
+	background-color: #a3b18a;
 	display: block;
 	align-content: center;
 	text-align: center;
@@ -378,17 +447,17 @@ footer {
 .footername{
 	width:100%;
 	padding-top: 30px;
-	font-family: 'Annie Use Your Telescope';
-	font-size: 40px;
+	font-family: 'Rock Salt';
+	font-size: 30px;
 	letter-spacing:5px;
 
 	align-content: center;
 	text-align: center;
-	color: #E1D8F7;
+	color: #344e41;
 }
 
 .footername a{
-	color: #E1D8F7;
+	color: #344e41;
 	text-decoration: none;
 	transition: 0.3s;
 	
@@ -407,7 +476,7 @@ footer {
 	padding-top: 30px;
 	font-family: 'Athiti';
 
-	color: #E1D8F7;
+	color: #344e41;
 	letter-spacing: 2px;
 	align-content: center;
 	text-align: center;
@@ -432,8 +501,8 @@ footer {
 .socialmedia i{
 	margin:5px;
 	font-size: 20px;
-	background: #D7C8F3;
-	color: #592E83;
+	background: #3a5a40;
+	color: #a3b18a;
 	border-radius:50%;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -443,8 +512,8 @@ footer {
 }
 
 .socialmedia i:hover{
-	background: #CAA8F5;
-	color: #FFFFFF ;
+	background: #dad7cd;
+	color: #344e41 ;
 }
 }
 
@@ -453,20 +522,25 @@ footer {
 
 
 * { margin: 0; padding: 0; }
+
+.modal-content{
+	width:100%;
+}
 	
 .topoheader {
-	background-color: #230C33;
+	background-color: #dad7cd;
 	margin:0;
 	display: block;
 	text-align: center;
 	align-content: center;
 	justify-content:center;
+	box-shadow: 0px 0px 10px 3px #000000;
 }
 
 .titulo {
 	width:100%;
 	margin:0;
-	font-family: 'Annie Use Your Telescope';
+	font-family: 'Rock Salt';
 	padding-left: 0px;
 	text-align: center;
 	align-content: center;
@@ -476,10 +550,10 @@ footer {
 }
 
 .titulo a {
-	font-size: 40px;
+	font-size: 30px;
 	text-decoration: none;
 	letter-spacing: 5px;
-	color: #EBE0FF;
+	color: #344e41;
 	transition: 0.5s;
 	animation-name: Appear;
 	animation-duration:2s;
@@ -493,7 +567,7 @@ footer {
 
 a:visited {
 	text-decoration: none;
-	color: #EBE0FF;
+	color: #344e41;
 }
 
 .menu {
@@ -506,7 +580,7 @@ a:visited {
 .menu a {
 	margin:10px;
 	width:50%;
-	color: #EBE0FF;
+	color: #344e41;
 	font-family: 'Athiti';
 	font-size: 18px;
 	text-decoration: none;
@@ -526,7 +600,7 @@ a:visited {
 }
 
 .WorkReels {
-	background-color: #EBE0FF;
+	background-color: rgb(218, 215, 205, 0.6);
 	text-align: center;
 	display: flex;	
 	flex-flow: column nowrap;
@@ -535,9 +609,9 @@ a:visited {
 }
 
 .WorkReels h1{
-	font-family: 'Annie Use Your Telescope';
-	color:#592E83;
-	font-size: 70px;
+	font-family: 'Rock Salt';
+	color:#3a5a40;
+	font-size: 20px;
 	letter-spacing: 5px;
 	animation-name: Appear;
 	animation-duration:2s;
@@ -602,7 +676,7 @@ a:visited {
 }
 
 footer {
-	background-color: #230C33;
+	background-color: #a3b18a;
 	display: block;
 	align-content: center;
 	text-align: center;
@@ -611,17 +685,17 @@ footer {
 .footername{
 	width:100%;
 	padding-top: 30px;
-	font-family: 'Annie Use Your Telescope';
-	font-size: 40px;
+	font-family: 'Rock Salt';
+	font-size: 30px;
 	letter-spacing:5px;
 
 	align-content: center;
 	text-align: center;
-	color: #E1D8F7;
+	color: #344e41;
 }
 
 .footername a{
-	color: #E1D8F7;
+	color: #344e41;
 	text-decoration: none;
 	transition: 0.3s;
 	
@@ -640,7 +714,7 @@ footer {
 	padding-top: 30px;
 	font-family: 'Athiti';
 
-	color: #E1D8F7;
+	color: #344e41;
 	letter-spacing: 2px;
 	align-content: center;
 	text-align: center;
@@ -665,8 +739,8 @@ footer {
 .socialmedia i{
 	margin:5px;
 	font-size: 20px;
-	background: #D7C8F3;
-	color: #592E83;
+	background: #3a5a40;
+	color: #a3b18a;
 	border-radius:50%;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -676,7 +750,7 @@ footer {
 }
 
 .socialmedia i:hover{
-	background: #CAA8F5;
-	color: #FFFFFF ;
+	background: #dad7cd;
+	color: #344e41 ;
 }
 }
